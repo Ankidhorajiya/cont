@@ -10,7 +10,7 @@ class Ability
     #   else
     #     can :read, :all
     #   end
-    if user.has_role? :admin
+    if user.admin?
         can :read, :all
     else
         can :read, :all
